@@ -8,8 +8,8 @@
 
 **Total Word Count:** \[]
 
-**Documentation Link:** [https://github.com/University-for-the-Creative-Arts/raylib-webgame-raylib-ramphoryncus/blob/main/README.md]
+**Documentation Link:** https://github.com/University-for-the-Creative-Arts/raylib-webgame-raylib-ramphoryncus/blob/main/README.md
 
-**Repository Link:** https://github.com/Ramphoryncus/TechnicalArt_24_25_Copy
+**Repository Link:** https://github.com/University-for-the-Creative-Arts/raylib-webgame-raylib-ramphoryncus
 
-**Build Link:** [https://ramphoryncus.itch.io/clock-face-accuracy-reaction-test]
+**Build Link:** https://ramphoryncus.itch.io/clock-face-accuracy-reaction-test
