@@ -8,7 +8,7 @@
 
 **Total Word Count:** \[]
 
-**Documentation Link:** https://github.com/Ramphoryncus/TechnicalArt_24_25_Copy/blob/GitMain/README.md
+**Documentation Link:** [https://github.com/University-for-the-Creative-Arts/raylib-webgame-raylib-ramphoryncus/blob/main/README.md]
 
 **Repository Link:** https://github.com/Ramphoryncus/TechnicalArt_24_25_Copy
 
