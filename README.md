@@ -38,7 +38,7 @@ An accuracy/reaction-time logger: 12 clockface target positions, 100 trials. Out
   PS C:\Users\htayl\emsdk> .\emsdk_env.ps1
 
   ```
-# raylib built for Web (one-time):
+## raylib built for Web (one-time):
 
   ```
 powershell
@@ -46,7 +46,7 @@ powershell
   cd "C:\Users\htayl\raylib\raylib\src"
   emmake make PLATFORM=PLATFORM_WEB -j
 ```
-Compile to /web (emcc, as requested)
+## Compile to /web (emcc)
 
 ```
 powershell
@@ -60,7 +60,7 @@ emcc .\src\main.cpp -o .\web\index.html `
 ```
 You can use em++ instead of emcc for C++ sources; both work with the flags above.
 
-(Optional) One-click script:
+## (Optional) One-click script:
 
 ```
 powershell
@@ -69,7 +69,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-web.ps1
 ```
 Outputs dist/web/index.html|.js|.wasm and a zip for itch.
 
-# Serve & play locally
+## Serve & play locally
 Python (simple static server)
 
 ```
@@ -78,9 +78,9 @@ bash
 cd web
 python -m http.server 8000
 ```
-## visit http://localhost:8000/
+### visit http://localhost:8000/
 
-# Emscripten runner
+## Emscripten runner
 
 ```
 bash
@@ -90,7 +90,7 @@ emrun web/index.html
 
 Opening index.html via file:// is not recommended; serve it to avoid security/CORS issues (and to mimic itch.io).
 
-# Web request (source / API)
+## Web request (source / API)
 
 At the end of a run (Web build only), the game posts a JSON summary using the Emscripten Fetch API (#include <emscripten/fetch.h>, linked via -sFETCH=1).
 
@@ -118,7 +118,7 @@ CORS: Your server must allow the game’s origin (itch.io embed) via Access-Cont
 
 If you don’t have a server yet, comment out the PostJSON(json); call; everything else still works.
 
-# Game Controls
+## Game Controls
 
 Return to centre and click to spawn target
 
