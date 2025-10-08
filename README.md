@@ -27,7 +27,9 @@ An accuracy/reaction-time logger: 12 clockface target positions, 100 trials. Out
 
 **Prereqs**
 - Emscripten SDK installed & activated:
-  ```powershell
+  ```
+  powershell
+  
   cd "$env:USERPROFILE\emsdk"
   .\emsdk_env.ps1
   ```
@@ -41,7 +43,8 @@ powershell
 ```
 Compile to /web (emcc, as requested)
 
-```powershell
+```
+powershell
 
 cd "F:\GitHubRepo\raylib-webgame-raylib-ramphoryncus"
 emcc .\src\main.cpp -o .\web\index.html `
@@ -54,7 +57,8 @@ You can use em++ instead of emcc for C++ sources; both work with the flags above
 
 (Optional) One-click script:
 
-```powershell
+```
+powershell
 
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-web.ps1
 ```
@@ -63,16 +67,18 @@ Outputs dist/web/index.html|.js|.wasm and a zip for itch.
 # Serve & play locally
 Python (simple static server)
 
-```bash
+```
+bash
 
 cd web
 python -m http.server 8000
 ```
-# visit http://localhost:8000/
+## visit http://localhost:8000/
 
 # Emscripten runner
 
-```bash
+```
+bash
 
 emrun web/index.html
 ```
@@ -90,7 +96,8 @@ Headers: Content-Type: application/json
 
 Payload example:
 
-```json
+```
+json
 
 {
   "trials": 100,
@@ -106,6 +113,7 @@ CORS: Your server must allow the game’s origin (itch.io embed) via Access-Cont
 If you don’t have a server yet, comment out the PostJSON(json); call; everything else still works.
 
 # Controls
+
 Return to centre and click to spawn target
 
 R = restart
