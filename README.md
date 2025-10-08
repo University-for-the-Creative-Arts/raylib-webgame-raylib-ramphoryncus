@@ -32,6 +32,11 @@ An accuracy/reaction-time logger: 12 clockface target positions, 100 trials. Out
   
   cd "$env:USERPROFILE\emsdk"
   .\emsdk_env.ps1
+
+  For me it looks like this
+  PS C:\Users\htayl> cd $HOME\emsdk
+  PS C:\Users\htayl\emsdk> .\emsdk_env.ps1
+
   ```
 # raylib built for Web (one-time):
 
@@ -85,7 +90,8 @@ emrun web/index.html
 
 Opening index.html via file:// is not recommended; serve it to avoid security/CORS issues (and to mimic itch.io).
 
-Web request (source / API)
+# Web request (source / API)
+
 At the end of a run (Web build only), the game posts a JSON summary using the Emscripten Fetch API (#include <emscripten/fetch.h>, linked via -sFETCH=1).
 
 Method: POST
@@ -112,7 +118,7 @@ CORS: Your server must allow the game’s origin (itch.io embed) via Access-Cont
 
 If you don’t have a server yet, comment out the PostJSON(json); call; everything else still works.
 
-# Controls
+# Game Controls
 
 Return to centre and click to spawn target
 
