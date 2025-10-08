@@ -13,3 +13,6 @@
 **Repository Link:** https://github.com/University-for-the-Creative-Arts/raylib-webgame-raylib-ramphoryncus
 
 **Build Link:** https://ramphoryncus.itch.io/clock-face-accuracy-reaction-test
+
+**.gif showing game running in browser**
+![RaylibWebGame-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/197bccb9-f1d0-460b-9fd5-3f5d15afaa7c)
