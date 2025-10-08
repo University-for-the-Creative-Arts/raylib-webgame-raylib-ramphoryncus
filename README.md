@@ -1,4 +1,4 @@
-# Clock Face Accuracy Reaction Test Raylib + Emscripten Web Game
+# Clock Face Accuracy Reaction Test (Raylib + Emscripten Web Game)
 
  **Unit Name:** Advanced Games Programming 25/26 FGCT6012
 
@@ -17,7 +17,6 @@
 **.gif showing game running in browser**
 ![RaylibWebGame-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/197bccb9-f1d0-460b-9fd5-3f5d15afaa7c)
 
-# ClockFace Accuracy & Reaction (raylib + Emscripten)
 
 An accuracy/reaction-time logger: 12 clockface target positions, 100 trials. Outer ring = 5 pts, bullseye = 10 pts. Must return to centre and click to spawn the next target. Exports CSVs; optional POST of summary JSON (Web only).
 
@@ -34,7 +33,8 @@ An accuracy/reaction-time logger: 12 clockface target positions, 100 trials. Out
   ```
 # raylib built for Web (one-time):
 
-  ```powershell
+  ```
+powershell
 
   cd "C:\Users\htayl\raylib\raylib\src"
   emmake make PLATFORM=PLATFORM_WEB -j
