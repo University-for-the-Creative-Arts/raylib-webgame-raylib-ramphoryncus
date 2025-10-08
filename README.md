@@ -93,9 +93,11 @@ powershell (how I did it)
 
  cd $HOME\emsdk
  .\emsdk_env.ps1
- cd "F:\RaylibProjects\ClockFaceAccuracyreactionTest"
- em++ ".\main.cpp" -o "index.html" -I"C:\Users\htayl\raylib\raylib\src" -L"C:\Users\htayl\raylib\raylib\src" -lraylib -DPLATFORM_WEB -sUSE_GLFW=3 -sFETCH=1 -sASYNCIFY -sALLOW_MEMORY_GROWTH=1 -O3
-PS F:\RaylibProjects\ClockFaceAccuracyreactionTest> emrun index.html
+ cd "F:\RaylibProjects\ClockFaceAccuracyReactionTest"
+ em++ ".\main.cpp" -o "index.html" -I"C:\Users\htayl\raylib\raylib\src" `
+-L"C:\Users\htayl\raylib\raylib\src" -lraylib -DPLATFORM_WEB `
+-sUSE_GLFW=3 -sFETCH=1 -sASYNCIFY -sALLOW_MEMORY_GROWTH=1 -O3
+PS F:\RaylibProjects\ClockFaceAccuracyReactionTest> emrun index.html
 ```
 
 Opening index.html via file:// is not recommended; serve it to avoid security/CORS issues (and to mimic itch.io).
