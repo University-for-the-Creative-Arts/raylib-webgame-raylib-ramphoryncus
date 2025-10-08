@@ -68,6 +68,7 @@ powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-web.ps1
 ```
 Outputs dist/web/index.html|.js|.wasm and a zip for itch.
+My build-web.ps1 file is in the ClockFaceAccuracyReactionTest folder.
 
 ## Serve & play locally
 Python (simple static server)
@@ -86,6 +87,15 @@ python -m http.server 8000
 bash
 
 emrun web/index.html
+```
+```
+powershell (how I did it)
+
+ cd $HOME\emsdk
+ .\emsdk_env.ps1
+ cd "F:\RaylibProjects\ClockFaceAccuracyreactionTest"
+ em++ ".\main.cpp" -o "index.html" -I"C:\Users\htayl\raylib\raylib\src" -L"C:\Users\htayl\raylib\raylib\src" -lraylib -DPLATFORM_WEB -sUSE_GLFW=3 -sFETCH=1 -sASYNCIFY -sALLOW_MEMORY_GROWTH=1 -O3
+PS F:\RaylibProjects\ClockFaceAccuracyreactionTest> emrun index.html
 ```
 
 Opening index.html via file:// is not recommended; serve it to avoid security/CORS issues (and to mimic itch.io).
@@ -129,3 +139,15 @@ D = download detailed trials CSV
 P = download per-direction summary CSV
 
 
+## Tools and Applications used during this project
+
+### ChatGPT 4o and Chat-GPT 5 mini
+
+I did seek assistance from Chat-GPT 4o on an ongoing basis to help me code this project. I also occasionally used the VSCode "agent mode" to fill in some chunks of code in main.cpp
+
+# Declared Assets
+
+List of declared assets
+> The following assets were created or modified with the use of ChatGPT 4o in a browser and ChatGPT-5 mini via the VSCode AI "agent mode" plugin
+> * `main.cpp`
+> * `build-web.ps1`
